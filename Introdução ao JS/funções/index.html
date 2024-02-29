@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1></h1>
+  <!--<script src="script.js"></script>-->
+  <script>
+    //Crie uma função para verificar se um valor é Truthy
+    function isTruthy(dado){
+      return !!dado; //!! serve para verificar se uma variavel é true ou false, so colocar !!exemplo
+    }
+    console.log(isTruthy('ssd'))
+    //Crie uma função matemática que retorne o perimetro de um quadrado
+    //Lembrando: perimetro é a soma dos quatros lados do quadrado
+    function perimetroQuadrado(lado){
+      return lado * 4;
+    }
+    //Crie uma função que retorne o seu nome completo
+    //Ela deve possui os parametros: nome e sobrenome
+    function nomeCompleto(nome, sobrenome){
+      return `${nome} ${sobrenome}`
+    }
+    //Crie uma função que verifica se um número é par
+    function numeroPar(numero){
+      modulo = numero % 2
+      if(modulo == 0){
+        return true + 'É par'
+      } else if(modulo == 1) {
+        return false + 'É impar'
+      } else {
+        return 'Insira um número!';
+      }
+    }
+    //Crie uma função que retorne o tipo de dado
+    //do argumento passado nela
+    function tipoDado(dado) {
+      return typeof dado
+    }
+    // addEventlistener é uma função nativa do JavaScript
+    // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
+    // utilize essa função para mostrar no console o seu nome completo
+    // quando o evento 'scroll' ocorrer
+    addEventListener('click', () => {
+      console.log('Pedro Vinicius')
+    })
+    //Corrija o erro abaixo
+    function precisoVisitar(paisesVisitados) {
+      var totalPaises = 193;
+      return `Ainda faltam ${totalPaises - paisesVisitados} paises`
+    }
+    function jaVisitei(paisesVisitados) {
+      var totalPaises = 193;
+      return `Já Visitei ${paisesVisitados} do total de ${totalPaises}`
+    }
+    //precisoVisitar(20)
+    //jaVisitei(20)
+    console.log(precisoVisitar(20) + ' e ' + jaVisitei(20))
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<script src="script.js"></script>-->
+    <script>
+        //Exercicio
+        //Cria uma array com os anos que o Brasil ganhou a copa
+        var copasBrasil = ['1959', '1962', '1970', '1994', '2002']
+        //Interaja com o array utilizando um loop, para mostrar
+        //no console a seguinte mensagem, o `O brasil ganhou a copa de ${anos}`
+        for (var i = 0; i < copasBrasil.length; i++){
+            console.log(`O brasil ganhou a copa de ${copasBrasil[i]}`)
+        }
+        //Interaja com um loop nas frutas abaixe e pare ao chegar em Pera
+        var frutas = ['Banana', 'Maçã', 'Pera', 'Uva', 'Melância']
+        for (var item = 0; item < frutas.length; item++) {
+            console.log(frutas[item]);
+            if (frutas[item] === 'Pera'){
+                break
+            }
+        }
+        //Coloque a última fruta do array acima em uma variável
+        //sem remover a mesma do array
+        var ultimaFruta = frutas[frutas.length - 1];
+        console.log(ultimaFruta)
+    </script>
+</body>
+</html>
